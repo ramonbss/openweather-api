@@ -1,7 +1,7 @@
 import pytest
 import os
 import requests_mock
-from openweather import OpenWeather
+from app.services.openweather import OpenWeather
 
 
 from dotenv import load_dotenv
