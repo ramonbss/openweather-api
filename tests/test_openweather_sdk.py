@@ -1,12 +1,7 @@
 import pytest
-import os
 import requests_mock
 from app.services.openweather import OpenWeather
-
-
-from dotenv import load_dotenv
-
-load_dotenv()
+from app.services.credenciais import CredenciaisOpenWeather
 
 
 @pytest.fixture
@@ -53,7 +48,7 @@ def resposta_api_previsao_tempo():
 
 
 def test_leitura_api_key():
-    assert os.getenv("API_KEY") is not None
+    assert CredenciaisOpenWeather.API_KEY is not None
 
 
 def test_endpoint_geolocalizacao_preenchido(openweather):
