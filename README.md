@@ -12,7 +12,7 @@ Para começar a usar este projeto, siga os passos abaixo:
 
 1. Clone o repositório do projeto:
    ```
-    git clone https://seu-repositorio.com/projeto.git
+    git clone https://github.com/ramonbss/openweather-api
     ```
 1. Navegue até o diretório do projeto:
    ```
