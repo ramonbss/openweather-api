@@ -11,6 +11,8 @@ openweather = OpenWeather(CredenciaisOpenWeather.API_KEY)
 def previsao_de_tempo(cidade: str):
     try:
         resposta = openweather.obter_previsao_do_tempo_8_dias(cidade)
+        if not resposta:
+            raise ValueError(f"Erro ao obter previsão para a cidade: {cidade}")
         return resposta
     except Exception as e:
         return HTTPException(status_code=400, detail=str(e))
