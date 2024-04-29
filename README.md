@@ -45,5 +45,5 @@ Antes de iniciar a aplicação, é necessário configurar a credencial para a AP
 #### Postar Atualizações do Tempo
 Envie uma requisição HTTP GET para o endpoint **/previsao_de_tempo** incluindo o nome da cidade como parâmetro. Por exemplo:
 ```
-curl http://localhost:8000/previsao_de_tempo?cidade=SaoPaulo
+curl http://localhost:8000/previsao_de_tempo?cidade="Sao Paulo"
 ```
