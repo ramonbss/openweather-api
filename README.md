@@ -29,7 +29,7 @@ Para iniciar o servidor FastAPI, execute o seguinte comando:
    uvicorn app.main:app
    ```
 
-A porta padrão será a 8000.
+A porta padrão será a 8000. A mesma pode ser modificada através do parametro `--port`.
 
 ## Configurações
 

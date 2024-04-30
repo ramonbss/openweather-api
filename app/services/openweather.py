@@ -36,7 +36,7 @@ class OpenWeather:
         if resposta.status_code == 200:
             return resposta.json()
         else:
-            print(f"Error fetching weather data: {resposta.status_code}")
+            print(f"Erro ao obter previsão: {resposta.status_code}")
             return None
 
     def construir_url_api_geolocalizacao(self, cidade):

@@ -1,0 +1,5 @@
+docker build -t caiena_openweather .
+docker run  --name api_openweather -p 8001:8000 caiena_openweather
+
+
+docker exec -it <container_name_or_id> /bin/bash
